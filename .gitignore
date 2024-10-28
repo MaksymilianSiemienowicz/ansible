@@ -1,0 +1,4 @@
+ansibleVenv/
+inventory/host_setup/secret.yml
+inventory/ipa/secret.yml
+inventory/ipa/ssl/
