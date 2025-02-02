@@ -1,0 +1,4 @@
+- name: Starting yarn
+  shell: "bash -i /home/hadoop/hadoop/sbin/start-yarn.sh"
+  when: inventory_hostname in groups["master"]
+  

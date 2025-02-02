@@ -1,0 +1,4 @@
+- name: Starting hbase
+  shell: "bash -i /home/hadoop/hbase/bin/start-hbase.sh"
+  when: inventory_hostname in groups["master"]
+  

@@ -1,0 +1,3 @@
+- name: Stopping yarn
+  shell: "bash -i /home/hadoop/hadoop/sbin/stop-yarn.sh"
+  when: inventory_hostname in groups["master"]

@@ -1,0 +1,4 @@
+- name: Starting spark
+  shell: "bash -i /home/hadoop/spark/sbin/start-master.sh"
+  when: inventory_hostname in groups["master"]
+  

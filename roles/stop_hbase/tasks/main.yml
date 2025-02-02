@@ -1,0 +1,4 @@
+- name: Stopping hbase
+  shell: "bash -i /home/hadoop/hbase/bin/stop-hbase.sh"
+  when: inventory_hostname in groups["master"]
+  

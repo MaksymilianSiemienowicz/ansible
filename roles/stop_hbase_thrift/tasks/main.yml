@@ -1,0 +1,6 @@
+- name: Stopping hbase-thrift
+  become: true
+  service:
+    name: "hbase-thrift"
+    state: stopped
+  when: inventory_hostname in groups["master"]

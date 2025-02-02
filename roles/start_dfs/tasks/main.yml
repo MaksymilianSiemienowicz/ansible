@@ -1,0 +1,4 @@
+- name: Starting dfs
+  shell: "bash -i /home/hadoop/hadoop/sbin/start-dfs.sh"
+  when: inventory_hostname in groups["master"]
+  

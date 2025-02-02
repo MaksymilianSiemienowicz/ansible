@@ -1,0 +1,3 @@
+- name: Stopping Zookeeper
+  command: "/home/hadoop/zookeeper/bin/zkServer.sh stop"
+  when: inventory_hostname in groups["all"]

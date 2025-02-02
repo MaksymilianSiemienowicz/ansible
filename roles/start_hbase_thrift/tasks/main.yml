@@ -1,0 +1,6 @@
+- name: Starting hbase-thrift
+  become: true
+  service:
+    name: "hbase-thrift"
+    state: started
+  when: inventory_hostname in groups["master"]

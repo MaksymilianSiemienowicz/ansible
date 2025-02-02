@@ -1,0 +1,9 @@
+- hosts: all
+  remote_user: "hadoop"
+  roles:
+    - start_zk
+    - start_dfs
+    - start_yarn
+    - start_hbase
+    - start_hbase_thrift
+    - start_spark

@@ -1,0 +1,3 @@
+- name: Starting Zookeeper
+  command: "/home/hadoop/zookeeper/bin/zkServer.sh start"
+  when: inventory_hostname in groups["all"]

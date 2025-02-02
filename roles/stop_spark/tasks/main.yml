@@ -1,0 +1,3 @@
+- name: Stopping spark
+  shell: "bash -i /home/hadoop/spark/sbin/stop-master.sh"
+  when: inventory_hostname in groups["master"]
