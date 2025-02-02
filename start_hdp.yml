@@ -7,3 +7,4 @@
     - start_hbase
     - start_hbase_thrift
     - start_spark
+    - start_spark_job

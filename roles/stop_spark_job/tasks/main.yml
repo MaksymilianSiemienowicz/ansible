@@ -1,0 +1,6 @@
+- name: Stopping spark job
+  become: true
+  service:
+    name: "spark-job"
+    state: stopped
+  when: inventory_hostname in groups["master"]
